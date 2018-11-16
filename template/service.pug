@@ -1,0 +1,40 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    .main
+        .top_banner(style='background:url(/public/images/service/service_banner.jpg) no-repeat center center;')
+            a(href='#')
+        .main_condent
+            .art_title 售后政策
+            ul.art_ul
+                li.art_item
+                    .item_left 7日无理由退货
+                    .item_right
+                        .art_condent
+                            p
+                                img(src='/public/images/service/11111.jpg' width='736', height='489', alt='')
+                li.art_item
+                    .item_left 90天免费换新
+                    .item_right
+                        .art_condent
+                            p
+                                img(src='/public/images/service/123.jpg' width='731', height='171', alt='')
+                li.art_item
+                    .item_left 整机两年保修
+                    .item_right
+                        .art_condent
+                            p
+                                img(src='/public/images/service/111111(1).jpg' width='793', height='696', alt='')
+                ul
+
+
+block script
+    script.
+        $(function () {
+            $('.item_right img').each(function (i, obj) {
+            $(obj).removeAttr('width').removeAttr('height');
+            });
+        });

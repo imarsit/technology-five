@@ -1,0 +1,113 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    .w-main
+        .w-overall
+            .section.preload.section-topimg
+            .section.preload.section-yytitle
+                .container
+                    .content
+                        h2.title-one 未来先生当家
+                        h3.subtitle 从此不再请保洁
+            .section.preload.section-xhvideo
+                .container
+                    .content
+                        h2.title
+                            | 立体气流循环
+                            br
+                            | 让家每一个角落快速注满田园清新
+                        p.text
+                            | 360°进出风口设计配合新风阀门，快速进风的同时也更利于净化后的清新气体四散，将“单向气流循环”升级为“立体气流循环”，实现室内空气大循环。送风与净化面积更广，效率更快更节能，让室内更远的空气也能被纳入循环系统实现净化，打造家里每个房间空气都自然干净的全屋净化，
+                            br
+                            | 小孩在家里放心跑动，再也不用区分已净化和污染区了。
+                .stage
+                    video.xhvideo(loop='', poster='/public/images/example/xhvideoimg.jpg')
+                        source(src='/public/video/house-video.webm' type='video/webm')
+                        source(src='/public/video/house-video.m4v' type='video/mp4')
+                        img(src='/public/images/example/xhvideoimg.jpg')
+            .section.preload.section-airflow
+                .container
+                    .content
+                        h2.title
+                            | 无处不在的防护专家
+                            br
+                            | 微正压护盾为你保护家人
+                        p.text
+                            | 未来先生新风净化器将室外空气经过彻底净化PM2.5后不断将洁净空气
+                            br
+                            | 持续导入室内。这不单让室内氧气充沛，更使得室内产生一个略高于外部
+                            br
+                            | 大气压的微正压。已产的废气则通过各处缝隙和已有建筑通风口排出，
+                            br
+                            | 同时室外污染空气由于压差无法进入室内。
+                .stage
+                    video.xhvideo(loop='', poster='images/xhvideoimg.jpg')
+                        source(src='/public/video/mic-video.webm' type='video/webm')
+                        source(src='/public/video/mic-video.m4v' type='video/mp4')
+                        img(src='/public/images/example/xhvideoimg.jpg')
+            .section.preload.section-crowd
+                .container
+                    .content
+                        h2.title 新风净化模式
+                        h3.subtitle 给最重要的家人百倍健康呵护
+                        .crowdtd 适用人群
+                        ul.crowd-list.clearfix
+                            li
+                                i.icon.icon-1
+                                | 孕妈妈
+                            li
+                                i.icon.icon-2
+                                | 婴童
+                            li
+                                i.icon.icon-3
+                                | 呼吸道敏感人士
+                            li
+                                i.icon.icon-4
+                                | 追求高品质人群
+                            li
+                                i.icon.icon-5
+                                | 临交通主干道家庭
+            .section.preload.section-purify
+                .container(style='width:1350px;')
+                    .content(style='background:rgba(255,255,255,0.8);padding:24px 44px;margin-top:95px;')
+                        h2.title
+                            | 三台并用
+                            br
+                            | 新风覆盖全屋净化
+                        p.text
+                            | 三世同堂的王先生拥有一套四室两厅的大户型住宅，未来先生根据王先生家近170㎡的面积与家庭构成，分别在主卧、次卧、客厅安装三台新风净化器。大范围的新风循环，均匀流向室内所有空间，并产生无死角的微正压，严防外部未净化空气渗入，达到全屋无尘级净化效果。三台式安装方案，适用于家中有老人与小孩的大户型。
+            .section.preload.section-growup
+                .container
+                    .content
+                        h2.title 双台循环 健康呵护成长空间
+                        p.text
+                            | 育有新生婴儿的杨先生向未来先生咨询如何进行空气净化，未来先生为三室两厅的杨先生量身定制了双台并用的净化模式，分别在主卧和客厅进行安装。两台新风净化器在130㎡的空间内形成双倍微正压，净化效率更高，更好地保护成长期孩子的肺部发育，促进生理机能健康形成。双台式安装方案，为下一代打造更健康的成长空间。
+                .scene.W_sectionScene
+            .section.preload.section-quality
+                .container(style='width:1400px;')
+                    .content
+                        h2.title 一台净化 升级幸福居家品质
+                        p.text
+                            | 李小姐与丈夫刚搬入80㎡的新家，急需对甲醛、苯等有害装修气体进行全面净化。未来先生建议在主卧安装一台特别配备更高效活性炭滤网的新风净化器，其甲醛吸附率高达99.99%，还可确保每15分钟即可对李小姐家完成一次室内新风循环。一台式安装方案，大幅度提升小户型的居家幸福。
+            .section.preload.section-colour
+                .container
+                    .content
+                        h2.title 颜                    色
+                        p.text 多变色彩与配件，首创空气净化器的定制模式，为每一处空间定制不同的精彩
+                        a.link(href='custom')
+                            | 进一步了解
+                            | 个性定制
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    a.close(data-dismiss='modal', aria-hidden='true', href='javascript: void(0);')
+                        i.iconfont ×
+                .modal-body
+                    iframe(width='880', height='536', frameborder='0', src='../player.youku.com/embed/XMTM2Mzg0MDM4MA==' allowfullscreen='')
+
+block script
+    script.

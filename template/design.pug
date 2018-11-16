@@ -1,0 +1,212 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    .w-main
+        .w-overall
+            .section.preload.section-xftopimg  
+            .section.preload.section-xftitle(style='height:700px;')
+                .container
+                    .content
+                        h2.title 所谓未来
+                        h3.subtitle 就是把异想天开变成自然而然
+                        .content-one
+                            h2.title-one
+                                | 传统的99%，抵不过创造性的1%
+                                br
+                                | 未来的1%，源于自然的100%
+                            p.text-one
+                                | 目前，99%的空气净化器采用传统的内循环净化方式，这将导致室内二氧化碳升高，而开窗通风pm2.5又瞬间回升，净化失效。无法保障健康呼吸，这是传统净化器无法回避的基因劣势。
+                                br
+                                br
+                                | 未来先生新风净化器则采用外循环的新风净化方式，将室外抽取的自然空气经过PM2.5净化、杀菌等工序后再传输到室内，让氧气源源不断的充满房间，不开窗也能享受大自然本该有的洁净。
+                            br
+                            p(style='font-size:24px;margin:16px;') 真正改善居家空气质量
+            .section.preload.section-forest
+                .container
+            .section.preload.section-green
+                .container
+                    .content
+                        h2.title
+                            | 每小时635立方米的净化量
+                            br
+                            | 每天为家灌溉280万升森林空气
+                        p.text
+                            | 高达635m³/小时的CADR值、120m³/h的新风量，每天为家灌溉280万升近三百万升的森林级空气。极速的净化能力，让每台未来先生适用于80平米左右的空间，每12分钟对空间彻底净化一次，顷刻间让房间仿佛置身于森林般的清新中。
+                .scene.W_sectiongreen  
+            .section.preload.section-flight
+                .container
+                    .content
+                        h2.title
+                            | 以飞机发动机为灵感来源
+                            br
+                            | 让新风飞行
+                        p.text
+                            | 极具现代科技感的简洁外观，通过优美的弧形外观结合内部强劲的气流动力，让未来先生在展现前沿工业艺术语言之美的同时，空气净化交换得到最大效应的提升。严谨美观、一丝不苟，整洁极简的工艺设计，让用户达到性能和外观的双优体验。
+                        p.text1111(style='text-align: center;font-size: 24px;font-weight: 300;color:#000000;margin-top: 20px;') 双曲面设计，高难度制造工艺，超乎想象。
+            .section.preload.section-xfvideo
+                a.modalbut(data-toggle='modal', data-target='#myModal')
+                    img(alt='', src='/public/images/design/playbut.png')
+                .container
+                .stage
+                    video.xfvideo(loop='')
+                        source(type='video/webm', src='/public/video/design-video.webm')
+                        source(type='video/mp4', src='/public/video/design-video.m4v')
+            .section.preload.section-product
+                .container
+                    .stage
+                        .stage-main
+                            span.figure.figure-m1
+                            .prosvg.svg-s1
+                            .ftext.ftext-t1
+                                h2.ftitle 高精度5英寸LED屏
+                                p.ptext 简洁美观的UI可视化界面，按需调节操作方便。各项数据化指标即时显示，空气质量一目了然。
+                        .stage-main
+                            span.figure.figure-m2
+                            .prosvg.svg-s2
+                            .ftext.ftext-t2
+                                h2.ftitle 涡轮美学出风栅格
+                                p.ptext
+                                    | 镀金属哑光银涡轮美学出风格栅设计，强劲气旋出风，
+                                    br
+                                    | 高效喷射至天花板，实现大覆盖气流循环。
+                        .stage-main
+                            span.figure.figure-m3
+                            .prosvg.svg-s3
+                            .ftext.ftext-t3
+                                h2.ftitle 千万级负离子发生器
+                                p.ptext
+                                    | 新风系统结合强力负离子发生器，
+                                    br
+                                    | 让每立方米的空气中富含千万个负离子。
+                                    br
+                                    | 负离子具有极佳的净化效果，被医学界誉为“空气维生素”。
+                                    br
+                                    | 未来先生化身护理专家，让每一次呼吸都享受医疗级清新氧护。
+                                ul.ftext-t3-list.clearfix
+                                    li 除 尘
+                                    li.lin3
+                                        | 减少
+                                        br
+                                        | 二手烟
+                                        br
+                                        | 危害
+                                    li.lin3
+                                        | 改善预防
+                                        br
+                                        | 呼吸道
+                                        br
+                                        | 疾病
+                                    li.lin2
+                                        | 改善
+                                        br
+                                        | 睡眠
+                                    li 防衰老
+                                    li.lin3
+                                        | 降低
+                                        br
+                                        | 血液
+                                        br
+                                        | 粘稠度
+                        .stage-main
+                            span.figure.figure-m4
+                            .prosvg.svg-s4
+                            .ftext.ftext-t4
+                                h2.ftitle 德国原装进口Ebmpapst风机
+                                p.ptext
+                                    | Ebmpapst风机，全球风机技术领先者，
+                                    br
+                                    | 运用RadiCal后向离心风机专利技术，
+                                    br
+                                    | 飞行涡轮般强大动力，每分钟2500转，
+                                    br
+                                    | 配合新型出风网，持续而稳定地提供超大清新空气，
+                                    br
+                                    | 于安静中瞬间开启纯净之旅。
+                                ul.ftext-t4-list.clearfix
+                                    li
+                                        i.icon.icon-1
+                                        | 德国原装进口
+                                    li
+                                        i.icon.icon-2
+                                        | 2500RPM
+                                    li
+                                        i.icon.icon-3
+                                        | 十年稳定运转
+                        .stage-main
+                            span.figure.figure-m5
+                            .prosvg.svg-s5
+                            .ftext.ftext-t5
+                                h2.ftitle 浸润式过滤S型风道
+                                p.ptext
+                                    | S型风道过滤方式，让空气长时间在过滤风道内停留，
+                                    br
+                                    | 享受千亿级活性净化因子的浸润式过滤，
+                                    br
+                                    | 空气经过层层净化直至纯净才得以进入出风阶段。
+                                h2.fftitle 创新塔式净化结构
+                                p.ptext
+                                    | 主体组件创新地采用塔式排布，通过独特的新风阀门与四面进风格栅，
+                                    br
+                                    | 空气被导入利于气体爬升的流体型立体风道中，轻松实现全屋空气净化。
+                        .stage-main
+                            span.figure.figure-m6
+                            .prosvg.svg-s6
+                            .ftext.ftext-t6
+                                h2.ftitle 360°四面进风栅格
+                                p.ptext
+                                    | 镀金属哑光银环形进风格栅，四面进风，
+                                    br
+                                    | 快速引入室内外自然空气，利于实现全屋气流循环。
+            .section.preload.section-patent
+                .container
+                    .content
+                        h2.title 七大专利保障
+                        ul.patent-list.clearfix
+                            li
+                                i.icon.icon-1
+                                | 新风功能
+                            li
+                                i.icon.icon-2
+                                | S型风道
+                            li
+                                i.icon.icon-3
+                                | 新型出风网
+                            li
+                                i.icon.icon-4
+                                | 导风圈
+                            li
+                                i.icon.icon-5
+                                | 降噪圈
+                            li
+                                i.icon.icon-6
+                                | 圆筒外观
+                            li
+                                i.icon.icon-7
+                                | 风道内设蜗壳
+            .section.preload.section-pm
+                .container
+                    .content
+                        h2.title
+                            | 出风口PM2.5值为
+                            i 0
+                            | μg？
+                        h3.subtitle
+                            | 要评判一台空气净化器的优劣
+                            br
+                            | 那就看出风口的洁净度
+                        a.link(href='theory') 进一步了解   滤芯原理
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    a.close(data-dismiss='modal', aria-hidden='true', href='javascript:;')
+                        i.iconfont ×
+                .modal-body
+                    iframe(src='/public/video/design-video.webm' width='880', height='536', marginheight='0', marginwidth='0', frameborder='0', scrolling='no')
+
+block script
+    script.
+

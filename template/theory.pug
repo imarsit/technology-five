@@ -1,0 +1,173 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+block content
+    .w-main
+        .w-overall
+            .section.preload.section-lxtopimg
+            .section.preload.section-lxtitle
+                .container
+                    .content
+                        h2.title
+                            | 对“
+                            i 0
+                            | ”的极限追求
+                        h3.subtitle 是一场有关信仰的修行
+            .section.preload.section-lxvideo
+                .stage
+                    video.lxvideo(loop='')
+                        source(src='/public/video/overall-lxvideo-video.webm', type='video/webm')
+                        source(src='/public/video/overall-lxvideo-video.m4v' type='video/mp4')
+                    img(src='/public/images/theory/video_theory.jpg')
+            .section.preload.section-inside
+                .container
+                    .content
+                        h2.title 纯物理过滤   避免二次污染
+                        p.text
+                            | 未来先生采用纯粹物理过滤方式，
+                            br
+                            | 这是目前国际公认的最实用且无污染的过滤方式。
+                            br
+                            | 在净化过程中不产生臭氧离子，无紫外线辐射，
+                            br
+                            | 避免化学及其他二次污染。
+                        h2.title-two 浸润式过滤S型风道
+                        p.text
+                            | S型风道过滤方式，让空气长时间在过滤风道内停留，
+                            br
+                            | 享受千亿级活性净化因子的浸润式过滤，
+                            br
+                            | 空气经过层层净化直至纯净才得以进入出风阶段。
+                        ul.inside-list.clearfix
+                            li 甲醛
+                            li PM2.5
+                            li 灰尘
+                            li 花粉
+                            li 二手烟
+                            li 过敏原
+                            li.lh20
+                                | 动物
+                                br
+                                | 毛发
+                            li.lh20
+                                | 化学
+                                br
+                                | 有害物
+                            li.fz12.lh20
+                                | 0.3μm
+                                br
+                                | 微小颗粒
+                            li.lh20
+                                | 有害
+                                br
+                                | 苯类
+                .stage
+                    video.xhvideo(autoplay='', loop='')
+                        source(src='/public/video/air-video.webm' type='video/webm')
+                        source(src='/public/video/air-video.m4v' type='video/mp4')
+            .section.preload.section-filter
+                .container
+                    .content
+                        h2.title 360°环形复式滤网   展开面积6.5㎡
+                        p.text
+                            | 360°超大环形复式滤网，相较于传统的矩形滤网而言，圆筒形滤网承风面积更大，滤纸展开面积高达6.5㎡，远超传统净化器。容尘量更多，过滤效率更高，滤网使用寿命更长。
+            .section.preload.section-paper
+                .container
+                    .content
+                        h2.title 初效滤纸 完全净化大颗粒物
+                        p.text 初效滤纸经过严格选材与设计，净化效果远超一般产品，能完全有效去除毛发、衣物纤维等，100%净化灰尘、花粉等大颗粒物，同时保护HEPA滤网。
+            .section.preload.section-cadr
+                .container
+                    .content
+                        h2.title
+                            | 活性炭甲醛CADR值
+                            i 180m³/h
+                        h3.subtitle 吸附有害气体效率高达99%
+                        p.text
+                            | 触媒型斯里兰卡椰壳优质活性炭与TVOC催化剂烧结成型，能快速消除空气异味。甲醛CADR值达到180m³/h，远超传统净化器性能，2小时可吸附高达99.99%的甲醛、苯、氨等有害气体。
+                .scene.W_sectioncadr
+            .section.preload.section-standard
+                .container
+                    .content
+                        h2.title H13级HEPA滤网  医用级标准
+                        p.text
+                            | 日本东丽（TORAY）H13医用级HEPA高效滤网，远超传统净化器配置，对PM2.5有效过滤率高达99.99%，对能直接进入血液的PM0.3有效过滤率也高达99.97%，近乎医疗级标准。
+            .section.preload.section-allergy
+                .container
+                    .content
+                        h2.title
+                            | 抗菌抗过敏滤网
+                            br
+                            | 遏制细菌源头呵护家人
+                        p.text
+                            | 抗过敏滤网中加入特殊专利材料，能将空气中的过敏原包裹住并清除，使其不会作用于人
+                            br
+                            | 体而产生过敏反应。在洁净空气的同时有效减少各类引起人体过敏的物质。
+                .scene.W_sectionallergy
+            .section.preload.section-acme
+                .container
+                    .content
+                        h2.title H14极限净化HEPA滤网 为苛刻而生
+                        p.text
+                            | 为满足苛刻的净化需求，高效H13级HEPA之上，
+                            br
+                            | 未来先生专为有特殊需求的家人选配H14极限净化HEPA滤网，
+                            br
+                            | 几乎达到净化器的极限标准。
+            .section.preload.section-zero1
+                .section.preload.section-zero
+                    .container
+                        .content
+                            h2.title 零浪费的更换滤网模式
+                            h3.subtitle
+                                | 高度、直径相同的通用接口设计
+                                br
+                                | 按需调整滤网组合
+                            p.text
+                                | 未来先生根据不同环境下各个滤网消耗不同，
+                                br
+                                | 实时显示使用程度并自动提醒更换。
+                                br
+                                | 为节省家庭滤网更换支出，采用更实用的上下滤网构建。
+                                br
+                                | 物尽其用，按需购买，成本零浪费。
+                            .scone
+                                h4.blutd 上层
+                                p.blutxt
+                                    | 上层抗菌抗过敏滤网，与高效滤网HEPA为一体更换，
+                                    br
+                                    | 严守苛刻质量。
+                            .scone
+                                h4.blutd 下层
+                                p.blutxt
+                                    | 下层初效滤网与活性炭一体更换，
+                                    br
+                                    | 降低使用成本。
+                            .sctwo
+                                h4.blutd 滤芯
+                                p.blutxt
+                                    | 全球知名滤芯供应商日本东丽（TORAY）
+                                    br
+                                    | 专为高端品牌配置
+                                    br
+                                    | 具备两组并联滤芯特殊专利，效率更强
+            .section.preload.section-intelligence
+                .container
+                    .content
+                        h2.title 智能计算滤网用量
+                        p.text 手机专属APP，随时显示每层滤网用量情况，智能提醒滤网更换
+                        a.link(href='science') 进一步了解   智能科技
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    a.close(data-dismiss='modal', aria-hidden='true', href='javascript: void(0);')
+                        i.iconfont ×
+                .modal-body
+                    iframe(height='536', width='880', src='../player.youku.com/embed/XMTM2Mzg0MDM4MA==' frameborder='0', allowfullscreen='')
+
+
+block script
+    script.
+

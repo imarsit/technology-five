@@ -1,0 +1,181 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    .w-main
+        .w-overall
+            .section.preload.section-zntopimg
+    .w-main
+        .w-overall
+            .section.preload.section-xftitle.machine
+                .container
+                    .content
+                        h2.f47.clever
+                            | 机器越来越聪明
+                            br
+                            | 是为了让人越活越轻松
+            .section.preload.section-door
+                .container
+                    .stage
+                        .stage-main.show
+                            span.figure-m0
+                            .ftext.ftext-t1
+                                h2.ftitle 五大智能科技
+                                h3.ftitle_sub 全方位想你所享，滤你所虑
+                                p.ptext
+                                    | 5大精度传感器均能智能监控室内气体含量，
+                                    br
+                                    | 并进行自行分析、自主选择净化方式，
+                                    br
+                                    | 根据室内外空气质量开启或关闭新风阀门。
+                                    br
+                                    | 即便在熟睡中，也有智能的守护者看护家人健康。
+                        .stage-main
+                            span.figure.figure-m1
+                            .ftext.ftext-t1
+                                h2.ftitle 激光PM2.5传感器
+                                h3.ftitle_sub 精确的粉尘计算专家
+                                p.ptext
+                                    | 领衔市场高端产品，摒弃传统净化器红外PM2.5传感器，
+                                    br
+                                    | 使用高精度激光PM2.5数字颗粒物浓度传感器，
+                                    br
+                                    | 可精准获得单位体积内空气中PM2.5数值（微克），
+                                    br
+                                    | 一旦超标能快速进行场景变换响应，
+                                    br
+                                    | 自动选择不同档位进行节能运转，保持安静的高效净化。
+                        .stage-main
+                            span.figure.figure-m2
+                            .ftext.ftext-t1
+                                h2.ftitle 红外二氧化碳传感器
+                                h3.ftitle_sub 长期在家的人也能享受富氧生态
+                                p.ptext
+                                    | 未来先生配备热电堆红外气体传感器，探测器上配备特殊滤光片，
+                                    br
+                                    | 只有CO2分子能够吸收的4.26μm波长的光能通过，从而被感应。
+                                    br
+                                    | 未来先生会时刻反应当前环境空气是否清新，好空气随时掌握，保障健康呼吸。
+                        .stage-main
+                            span.figure.figure-m3
+                            .ftext.ftext-t1
+                                h2.ftitle 高精度甲烷气敏元件
+                                h3.ftitle_sub 无嗅无味的气体做到有声有据的反应
+                                p.ptext
+                                    | 未来先生配备的高精度半导体甲烷传感器，
+                                    br
+                                    | 对甲烷等有害气体具备高精准选择性。
+                                    br
+                                    | 当甲烷数值超标，新风净化器将报警提醒家人，
+                                    br
+                                    | 并以最高档运行净化空气，直至数值恢复正常，保障家人安全。
+                        .stage-main
+                            span.figure.figure-m4
+                            .ftext.ftext-t1
+                                h2.ftitle 高精度甲醛传感器
+                                h3.ftitle_sub 以严苛的欧盟标准保障中国居家
+                                p.ptext
+                                    | 源自英国技术的两电极电化学型的精密传感器，
+                                    br
+                                    | 通过扩散原理实现甲醛检测。
+                                    br
+                                    | 当甲醛数值超标，新风净化器将报警提醒家人，
+                                    br
+                                    | 并以最高档运行净化空气，直至数值恢复正常，
+                                    br
+                                    | 保障健康呼吸。
+                        .stage-main
+                            span.figure.figure-m5
+                            .ftext.ftext-t1
+                                h2.ftitle 空气温湿度显示
+                                h3.ftitle_sub 更懂爱美的肌肤对水分的细腻要求
+                                p.ptext
+                                    | 未来先生特别为家中注重肌肤保养的生活专家
+                                    br
+                                    | 准备了更专业的温湿度显示，
+                                    br
+                                    | 随时提醒家人进行补水保养及花草养护，
+                                    br
+                                    | 提升家中品质生活
+            .fulture.pr(style='z-index: 99;')
+                .pa.clasiff.section.preload.section-bbtitle(style='width:1220px;margin:0 auto;z-index:60;padding-top:160px;')
+                    p.title
+                        | 仅属于未来先生的
+                        br
+                        | 新风阀门
+                    p.title.text
+                        | 未来先生源源不断的为室内输入新鲜空气，
+                        br
+                        | 并且当室外发生极端污染天气如沙尘暴，
+                        br
+                        | 灾害性化学污染等特殊情况，
+                        br
+                        | 未来先生特殊的新风阀门将启动自动关闭的保护机制，
+                        br
+                        | 并随室内外空气的质量变化智能地选择开闭状态。
+                .stage
+                    video.xhvideo(autoplay='', loop='', poster='images/fulture_bg.png')
+                        source(src='/public/video/valve-video.webm' type='video/webm')
+                        source(src='/public/video/valve-video.m4v' type='video/mp4')
+                        img(src='/public/images/science/fulture_bg.png')
+            .section.preload.section-phone
+                .container(style='width:400px;')
+                    .content
+                        h2.f47.lh80.colorwh.title 数据化移动云端
+                        p.f16.lh32.colorwh.text
+                            | 未来先生新风净化器内置Wi-Fi模块，
+                            br
+                            | 可随时接入网络与手机互联，
+                            br
+                            | 并配备专属APP平台。
+                            br
+                            | 家中空气质量完全可视化，
+                            br
+                            | 通过新风净化器内置的空气质量传感器，
+                            br
+                            | 无论在哪里，
+                            br
+                            | 都能精确通过手机看到家中空气的相关数据。
+            .sofa
+                .w624.tc.oh.bc
+                    p.f47.lh80.mt90.mb33 远程遥控
+                    p.f20.lh32
+                        | 未来先生新风净化器通过专属APP平台，
+                        br
+                        |  即使在下班回家路上，也可以提前开启净化，
+                        br
+                        |  回家就能享受新鲜洁净的自然空气。
+                    p.f47.lh80.mt90.mb33 智能提醒 随时在线
+                    p.f20.lh32
+                        | 专属APP平台，未来先生在家人手机里可设置显示多种提醒，
+                        br
+                        |  让家人享受新风净化器带来的洁净空气的同时， 
+                        br
+                        | 彻底免除使用的后顾之忧。
+                ul.warning.bc
+                    li.tc
+                        img(src='/public/images/science/square-icon.png')
+                        div 甲醛超标提醒
+                    li.tc
+                        img(src='/public/images/science/square-iconsec.png')
+                        div 安防提醒
+                    li.tc
+                        img(src='/public/images/science/square-for.png')
+                        div 甲烷超标提醒
+                    li.tc
+                        img(src='/public/images/science/square-air.png')
+                        div 二氧化碳超标提醒
+            .childplay.oh
+                .doknowOut.bc
+                    p.doknow.lh80.f40
+                        span.f60
+                            | 知道吗？
+                            br
+                        span.f61 不同的户型，使用方式也不一样哦！
+                    p.f20.lh32.mb114 三台联用可实现全屋净化，半个月不做清洁，房间依然干净。
+                    a.continue(href='example') 进一步了解  实例应用
+
+block  script
+    script.

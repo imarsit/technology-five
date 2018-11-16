@@ -1,0 +1,106 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+block content
+    .main
+        .main_condent
+            .blank80
+            .goods_condent
+                .goods_left.f_l
+                    .goods_img
+                        img#original_img(src='/public/images/goods/73_G_1460572962147.png')
+                .goods_right.f_r
+                    form#ECS_FORMBUY
+                        .goods_item_top
+                            .goods_item
+                                span.style_name MR.FUTURE
+                            .goods_item
+                                p.guanwang 售价：
+                                p.price
+                                    font(style='font-size:24px;color:#ff7800;') RMB
+                                    span#ECS_SHOPPRICE 0.00
+                                p.btn_box
+                                    a.btn(href='javascript:addToCart(73)', title='立即购买') 立即购买
+                                span.cart
+                                    a(href='javascript:addToCart(73)', title='加入购物车') 加入购物车
+                        .goods_itop
+                            .goods_item
+                                span.attr_title 机身颜色
+                                .catt_r
+                                    .catt
+                                        a.cattsel( href='javascript:;', name='268', title='[加 8000.00]')
+                                            span 经典白
+                                            em
+                                            input#spec_value_268(style='display:none', type='radio', name='spec_210', value='268', checked='')
+                                        a( href='javascript:;', name='269', title='[加 8300.00]')
+                                            span 香思绿
+                                            em
+                                            input#spec_value_269(style='display:none', type='radio', name='spec_210', value='269')
+                                        a( href='javascript:;', name='270', title='[加 8300.00]')
+                                            span 浪漫粉
+                                            em
+                                            input#spec_value_270(style='display:none', type='radio', name='spec_210', value='270')
+                                        a( href='javascript:;', name='271', title='[加 8300.00]')
+                                            span 萌萌黄
+                                            em
+                                            input#spec_value_271(style='display:none', type='radio', name='spec_210', value='271')
+                                        a( href='javascript:;', name='272', title='[加 8300.00]')
+                                            span 心悦蓝
+                                            em
+                                            input#spec_value_272(style='display:none', type='radio', name='spec_210', value='272')
+                                    input(type='hidden', name='spec_list', value='4')
+                            .goods_item
+                                span.attr_title 装饰部件
+                                .catt_r
+                                    .catt
+                                        a.cattsel( href='javascript:;', name='262', title='[加 200.00]')
+                                            span 星际银
+                                            em
+                                            input#spec_value_262(style='display:none', type='radio', name='spec_211', value='262', checked='')
+                                        a( href='javascript:;', name='263', title='[加 200.00]')
+                                            span 浅金色
+                                            em
+                                            input#spec_value_263(style='display:none', type='radio', name='spec_211', value='263')
+                                        a( href='javascript:;', name='264', title='[加 300.00]')
+                                            span 浅美枫
+                                            em
+                                            input#spec_value_264(style='display:none', type='radio', name='spec_211', value='264')
+                                        a( href='javascript:;', name='265', title='[加 400.00]')
+                                            span 深胡桃
+                                            em
+                                            input#spec_value_265(style='display:none', type='radio', name='spec_211', value='265')
+                                    input(type='hidden', name='spec_list', value='3')
+                            .goods_item
+                                span.attr_title 滤网组件
+                                .catt_r
+                                    .catt
+                                        a.cattsel( href='javascript:;', name='275', title='[加 1099.00]')
+                                            span.f24 经典版
+                                            p.attr_desc 6.5㎡H13级医用HEPA+独有活性碳配方，适用大多数家庭
+                                            em
+                                            input#spec_value_275(style='display:none', type='radio', name='spec_212', value='275', checked='')
+                                        a( href='javascript:;', name='276', title='[加 1499.00]')
+                                            span.f24 除醛加强版
+                                            p.attr_desc 强力催化活性炭配方+H13级医用HEPA 极速除甲醛、苯、VOC等有害物，适用新装修家庭,时搭配使用
+                                            em
+                                            input#spec_value_276(style='display:none', type='radio', name='spec_212', value='276')
+                                        a( href='javascript:;', name='277', title='[加 2099.00]')
+                                            span.f24 极苛版
+                                            p.attr_desc H14超医用级HEPA，极苛生活，为挑剔而生
+                                            em
+                                            input#spec_value_277(style='display:none', type='radio', name='spec_212', value='277')
+                                        a( href='javascript:;', name='279', title='[加 799.00]')
+                                            span.f24 蓝净版
+                                            p.attr_desc 4.5㎡H13级医用HEPA+加强纯初效滤网，适合多台购买时搭配使用
+                                            em
+                                            input#spec_value_279(style='display:none', type='radio', name='spec_212', value='279')
+                                    input(type='hidden', name='spec_list', value='3')
+                        p(style='padding-bottom:35px;') 您选购的Mr.Future新风空气净化器，我们会在 48 小时内为您发货。
+                        input#number(type='hidden', value='1', name='number')
+    div(style='height:105px;width:100%;clear:both;')
+
+block script
+    script.
+
+

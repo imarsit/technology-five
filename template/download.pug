@@ -1,0 +1,87 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    .w-main
+        .w-overall
+            .section.preload.section-shvideo
+                a.modalbut(data-toggle='modal', data-target='#myModal')
+                    img( src='/public/images/download/playbut.png')
+                .stage
+                    video.xhvideo(autoplay='', loop='', style='width:100%;')
+                        source(src='/public/video/appdown.webm' type='video/webm')
+                        source(src='/public/video/appdown.m4v' type='video/mp4')
+    .main
+        .down_condent.bg_6a
+            .center-one
+                .title
+                    | APP下载
+                .domw_item
+                    .left_img
+                        img(src='/public/images/download/app_03.jpg')
+                    .right_info
+                        p.item_title 智能提醒，随时在线。
+                        p.item_desc 未来先生新风空气净化器内置WIFI模块，可以接入网络，并与手机连接。无论你在哪里，都可以远程遥控你的净化器，还能实时看到家中空气质量。
+                        .down_box
+                            .left_wx
+                                img(src='/public/images/download/app_06.jpg')
+                            .right_way
+                                a.bg_9d(href='/public/appdown/FutureAPP.apk') 下载Android版
+                                a.bg_f4(href='javascript:;') 下载IOS版
+        .down_condent.bg_67.section-growup
+            .center-one
+                .blank_200
+                .left_info.f_l
+                    p.title 数据化移动云端 
+                    p.desc
+                        | 家中空气质量完全可视化，通过新风净化器内置的空气质量传感器，
+                        br
+                        | 无论在哪里，都能精确通过手机看到家中空气的相关数据
+                .right_img_one.f_r.W_sectionScene
+        .down_condent.bg_75.section-growup
+            .center-one
+                .blank_200
+                .left_info.f_l
+                    p.title 定时净化
+                    p.desc
+                        | 你可以根据自己的生活习惯安排它何时启动，何时关机。
+                        br
+                        | 上班忘记关机，也可在办公室远程关机。
+                        br
+                        | 在下班前提前打开净化器，到家就有新鲜空气
+                .right_img_two.f_r.W_sectionScene
+        .down_condent.bg_a4.section-growup
+            .center-one
+                .blank_200
+                .left_info.f_l
+                    p.title 智能提醒
+                    p.desc
+                        | 运行异常提醒、蓝天开窗提醒、滤芯耗尽提醒、
+                        br
+                        | 安全提醒、有害气体超标提醒等。
+                .right_img_three.f_r.W_sectionScene
+        .down_condent.bg_ef
+            p.down_title 立即下载 ,了解更多
+            p.down_link
+                a(href='javascript:;') 立即下载
+            a(href='javascript:;')
+        a(href='javascript:;')
+    a(href='javascript:;')
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        a(href='javascript:;')
+        .modal-dialog
+            a(href='javascript:;')
+            .modal-content
+                a(href='javascript:;')
+                .modal-header
+                    a(href='javascript:;')
+                    a.close(data-dismiss='modal', aria-hidden='true', href='javascript: void(0);')
+                        i.iconfont ×
+                .modal-body
+                    iframe(src='/public/video/overall-lxvideo-video.m4v' width='880', height='536', marginheight='0', marginwidth='0', frameborder='0', scrolling='no')
+
+
+block script
+    script.

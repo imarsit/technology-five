@@ -1,0 +1,70 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    .index_banner
+        #slideBox.slideBox
+            .hd
+                ul.smallUl
+            .bd
+                ul
+                    li(style='background:url(/public/images/home/banner/2018091313390092.jpg) no-repeat center center ;')
+                        a(href="javascript:;")
+                    li(style='background:url(/public/images/home/banner/2018091313402897.jpg) no-repeat center center ;')
+                        a(href="javascript:;")
+                    li(style='background:url(/public/images/home/banner/2018091313483925.jpg no-repeat center center ;')
+                        a(href="javascript:;")
+            a.prev(href='javascript:;')
+                | <
+            a.next(href='javascript:;')
+                | >
+
+        .index_video
+            a.left_about(href='news.php-tpl=contact.htm')
+                img(src='/public/images/home/video1_right.jpg')
+            .video_box
+                ul
+                    li
+                        a(data-toggle='modal', data-target='#myModal')
+                            img(src='/public/images/home/video1_03.jpg')
+                    li
+                        a(data-toggle='modal', data-target='#myModal2')
+                            img(src='/public/images/home/video1_05.jpg')
+            a.right_contact(href='news.php-tpl=contact.htm')
+                img(src='/public/images/home/video1_left.jpg')
+
+        #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        a.close(data-dismiss='modal', aria-hidden='true', href='javascript: void(0);')
+                            i.iconfont ×
+                    .modal-body
+                        iframe(width='880', height='536', frameborder='0', src='/public/video/video1.webm' allowfullscreen='')
+        #myModal2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        a.close(data-dismiss='modal', aria-hidden='true', href='javascript: void(0);')
+                            i.iconfont ×
+                    .modal-body
+                        iframe(width='880', height='536', frameborder='0', src='/public/video/air-video.m4v' allowfullscreen='')
+block script
+    script.
+        jQuery(".slideBox").slide({
+            titCell: ".hd ul",
+            mainCell: ".bd ul",
+            scroll: 1,
+            autoPlay: true,
+            autoPage: true,
+            mouseOverStop: false
+        });
+
+        $(document).ready(function() {
+            var win_w = $(window).width();
+            var w = (win_w - 967) / 2;
+            $('.left_about').css('width', w);
+            $('.right_contact').css('width', w);
+        });

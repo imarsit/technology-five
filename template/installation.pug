@@ -1,0 +1,46 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    .main
+        .top_banner(style='background:url(/public/images/installation/ps_banner.jpg) no-repeat center center;')
+            a(href='#')
+        .main_condent
+            .art_title 配送&安装
+            ul.art_ul
+                li.art_item
+                    .item_left 配送
+                    .item_right
+                        .art_condent
+                            p
+                                img(src='/public/images/installation/ps03.jpg')
+                li.art_item
+                    .item_left 其它说明
+                    .item_right
+                        .art_condent
+                            p
+                                img(src='/public/images/installation/ps06.jpg')
+                li.art_item
+                    .item_left 安装
+                    .item_right
+                        .art_condent
+                            p
+                                img(src='/public/images/installation/ps08.jpg')
+                li.art_item
+                    .item_left 签收须知
+                    .item_right
+                        .art_condent
+                            p
+                                img(src='/public/images/installation/ps10.jpg' width='715', height='218', alt='')
+                ul
+
+
+block script
+    script.
+        $(function () {
+        $('.item_right img').each(function (i, obj) {
+        $(obj).removeAttr('width').removeAttr('height');
+        });
+         });

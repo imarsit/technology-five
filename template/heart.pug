@@ -1,0 +1,122 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    .w-main
+        .w-overall
+            .section.preload.section-shvideo
+                a.modalbut(data-toggle='modal', data-target='#myModal')
+                    img(alt='', src='/public/images/heart/playbut.png')
+                .stage
+                    video.xhvideo(autoplay='', loop='')
+                        source(src='/public/video/video1.webm')
+                        source(src='/public/video/video1.m4v')
+            .section.preload.section-bwtitle
+                .container
+                    .content
+                        h2.title 划分时代的Mr·Future
+                        h3.subtitle
+                            | 一切不守规则的创新都是从规则开始的
+                            br
+                            | 并以产生新的规则而结束
+            .section.preload.section-family
+                .container
+                    .content
+                        h2.title
+                            | 为家人设计一台真正的
+                            br
+                            | 空气净化器
+                        p.text
+                            | 先生在购买一台净化器的时候，他清楚：
+                            br
+                            | 净化空气却不提供自然空气的传统净化器，只是雾霾时代的新型安慰剂。
+                            br
+                            br
+                            | 保障健康呼吸的是另一种截然不同的体系，新风系统。
+                            br
+                            | 将新风系统和空气净化器结合，才是先生想给家人的净化器。
+                            br
+                            br
+                            | 先生认为，为了家人的健康，真正的净化器，必须是全能选手:
+                            br
+                            | 既要有新风输入，还要对PM2.5进行彻底净化，
+                            br
+                            | 关窗再久也不闷，家中随时充满洁净的自然空气。
+                            br
+                            | 空气的各项指标都要数据化，方便先生随时掌控家中空气的洁净指数。
+                            br
+                            | 运行更要经得起时间的考量，保证长期稳定工作才可免除先生的使用烦恼。
+            .section.preload.section-sjtitle
+                .container
+                    .content
+                        h2.title 所有的一切准备妥当,第一步才算走完。
+                        h3.subtitle
+                            | 能快速超越传统，不代表能快速开创新领域。
+                            br
+                            | 传统制造和未来创造之间，总隔着漫长的努力和精益求精。
+                            br
+                            | 最长的一次修改，用了半年时间。
+            .section.preload.section-handpainted1
+                .container
+                    .handptitle
+                        .handptxt
+                            img(width='424', height='271', src='/public/images/heart/handpt1.jpg')
+                        .handptd
+                            img(width='462', height='132', src='/public/images/heart/handptd1.jpg')
+                .handpbg  
+            .section.preload.section-handpainted2
+                .container
+                    .handptitle
+                        .handptxt
+                            img(width='424', height='313', src='/public/images/heart/handpt2.jpg')
+                        .handptd
+                            img(width='435', height='123', src='/public/images/heart/handptd2.jpg')
+                .handpbg  
+            .section.preload.section-handpainted3
+                .container
+                    .handptitle
+                        .handptxt
+                            img(width='384', height='230', src='/public/images/heart/handpt3.jpg')
+                        .handptd
+                            img(width='432', height='121', src='/public/images/heart/handptd3.jpg')
+                .handpbg  
+            .section.preload.section-design
+                .container(style='width:1500px;')
+                    .content
+                        p.text
+                            | 先生坚持初心，
+                            br
+                            | 给家人一台懂得呼吸的新风净化器。
+                            br
+                            | 不忘初心，能得始终。
+                        h2.title 不是所有空气净化器都有新风
+                        .designtd 适用人群
+                        ul.design-list.clearfix
+                            li
+                                i.icon.icon-1
+                                | 孕妈妈
+                            li
+                                i.icon.icon-2
+                                | 婴童
+                            li
+                                i.icon.icon-3
+                                | 呼吸道敏感人士
+                            li
+                                i.icon.icon-4
+                                | 追求高品质人群
+                            li
+                                i.icon.icon-5
+                                | 临交通主干道家庭
+                        a.link(href='design')
+                            | 进一步了解
+                            | 新风&设计
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    a.close(data-dismiss='modal', aria-hidden='true', href='javascript:;')
+                        i.iconfont ×
+                .modal-body
+                    iframe(src='/public/video/video1.webm', width='880', height='536', marginheight='0', marginwidth='0', frameborder='0', scrolling='no')
