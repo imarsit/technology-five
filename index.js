@@ -1,6 +1,6 @@
 module.exports = {
 	// 模版标识
-	name: 'example',
+	name: 'technology-five',
 	// 模版引擎
 	engine: 'pug',
 
@@ -84,11 +84,11 @@ module.exports = {
 			thumbnail: 'service.png',
 		},
 		{
-			name: 'dowm',
+			name: 'app下载',
 			// 路径
-			path: '/dowm',
+			path: '/download',
 			// 预览图
-			thumbnail: 'dowm.png',
+			thumbnail: 'download.png',
 		},
 	]
 }
